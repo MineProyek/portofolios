@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radyan Roy - Junior Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "cPb5NHLr2aNEzqgSA",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Radyan Roy</h2>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Kontak</a>
+          </li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <h1 class="hero-title">Radyan Roy</h1>
+          <h2 class="hero-subtitle">Junior Web Developer</h2>
+          <p class="hero-description">
+            Seorang anak biasa dari keluarga biasa yang mendapat keberuntungan
+            untuk dapat mempelajari bagaimana teknologi bekerja. Membangun masa
+            depan melalui kode dan inovasi.
+          </p>
+          <a href="#portfolio" class="cta-button">Lihat Portofolio</a>
+        </div>
+        <div class="hero-image">
+          <div class="profile-placeholder">
+            <img src="img\gwa.jpg" alt="error" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p>
+          Saya adalah junior web developer yang bersemangat membangun aplikasi
+          modern dengan teknologi terkini. Spesialisasi dalam HTML, CSS,
+          JavaScript, Responsive Design, dan UI/UX dasar.
+        </p>
+        <div class="skills-badges">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">UI/UX Basic</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portofolio Proyek</h2>
+        <div class="portfolio-grid">
+          <!-- Project cards -->
+          <div class="portfolio-card">
+            <h3><strong>Website Portofolio</strong></h3>
+            <p>
+              website portofolio yang digunakan untuk membagikan semua projet
+              yang perah kami buat.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a
+              href="https://mineproyek.github.io/Portofolio/"
+              class="project-link"
+              >Link Site</a
+            >
+          </div>
+          <div class="portfolio-card">
+            <h3><strong>Website Matrix Sederhana</strong></h3>
+            <p>Website matrix yang dibuat untuk menyelesaikan suatu Tugas.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a
+              href="https://radyanroyanadirukmana124.github.io/Matrix-Calculators/"
+              class="project-link"
+              >Link Site</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Kontak</h2>
+        <form id="form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name"
+              >Nama Lengkap <span aria-label="required">*</span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nama Anda"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+            />
+            <span
+              id="name-error"
+              class="error-message"
+              role="alert"
+              aria-live="polite"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label for="title"
+              >Title <span aria-label="required">*</span></label
+            >
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Judul Pesan"
+              required
+              aria-required="true"
+              aria-describedby="subject-error"
+            />
+            <span
+              id="title-error"
+              class="error-message"
+              role="alert"
+              aria-live="polite"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              >Email <span aria-label="required">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Gunakan alamat email yang valid"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+            />
+            <span
+              id="email-error"
+              class="error-message"
+              role="alert"
+              aria-live="polite"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message"
+              >Pesan <span aria-label="required">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tulis pesan Anda di sini..."
+              required
+              aria-required="true"
+              aria-describedby="message-error"
+            ></textarea>
+            <span
+              id="message-error"
+              class="error-message"
+              role="alert"
+              aria-live="polite"
+            ></span>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submit-btn">
+            <span class="btn-text">Kirim Pesan</span>
+          </button>
+
+          <div
+            id="form-message"
+            class="form-message"
+            role="alert"
+            aria-live="polite"
+          ></div>
+        </form>
+        <div class="contact-info">
+          <p>
+            Email: mineproyek@gmail.com
+            <a href="mailto:mineproyek@gmail.com"></a>
+          </p>
+          <p>Lokasi: Klaten, Indonesia</p>
+          <p>Sekolah: 06.45 - 15.15</p>
+          <div class="social-links">
+            <a
+              href="https://github.com/radyanroy"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/radyanroy"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/radyanroy"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; 2024 Radyan Roy. All rights reserved. | Built with ❤️ and neon
+        lights
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
